@@ -14,6 +14,7 @@ const GameCard = () => {
                 <h2>{game.name}</h2>
                 <img src={game.thumbnail} alt={game.name} />
                 <p>{game.description}</p>
+                <span>Sale ends on: {game.saleEndDate}</span>
                 <SteamButton steamPageLink={game.steamPageLink} />
                 </div>
             ))}
