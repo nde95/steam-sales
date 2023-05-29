@@ -1,0 +1,26 @@
+.game-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-card {
+    margin-top: 10px;
+}
+
+.game {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: darkgrey;
+}
+
+.game p {
+    color: white
+}
+
+.game h2 {
+    color: white;
+}
+
