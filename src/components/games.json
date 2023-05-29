@@ -1,29 +1,29 @@
 {
     "games": [
       {
-        "name": "Game 1",
-        "thumbnail": "https://example.com/game1-thumbnail.jpg",
+        "name": "The Elder Scrolls Oblivion",
+        "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/22330/header.jpg?t=1661882760",
         "genres": ["Action", "Adventure"],
-        "description": "This is the description for Game 1.",
-        "steamPageLink": "https://store.steampowered.com/app/123456",
+        "description": "The Elder Scrolls IV: Oblivion® Game of the Year Edition presents one of the best RPGs of all time like never before. Step inside the most richly detailed and vibrant game-world ever created. With a powerful combination of freeform gameplay and unprecedented graphics, you can unravel the main",
+        "steamPageLink": "https://store.steampowered.com/app/22330/The_Elder_Scrolls_IV_Oblivion_Game_of_the_Year_Edition/",
         "saleEndDate": "2023-06-01",
         "dateAdded": "2023-05-29"
       },
       {
-        "name": "Game 2",
-        "thumbnail": "https://example.com/game2-thumbnail.jpg",
+        "name": "Crusader Kings III",
+        "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/header.jpg?t=1683820745",
         "genres": ["RPG", "Strategy"],
-        "description": "This is the description for Game 2.",
-        "steamPageLink": "https://store.steampowered.com/app/234567",
+        "description": "Love, fight, scheme, and claim greatness. Determine your noble house’s legacy in the sprawling grand strategy of Crusader Kings III. Death is only the beginning as you guide your dynasty’s bloodline in the rich and larger-than-life simulation of the Middle Ages.",
+        "steamPageLink": "https://store.steampowered.com/app/1158310/Crusader_Kings_III/",
         "saleEndDate": "2023-06-05",
         "dateAdded": "2023-05-28"
       },
       {
-        "name": "Game 3",
-        "thumbnail": "https://example.com/game3-thumbnail.jpg",
+        "name": "Project Zomboid",
+        "thumbnail": "https://cdn.cloudflare.steamstatic.com/steam/apps/108600/header.jpg?t=1679306018",
         "genres": ["Simulation", "Indie"],
-        "description": "This is the description for Game 3.",
-        "steamPageLink": "https://store.steampowered.com/app/345678",
+        "description": "Project Zomboid is the ultimate in zombie survival. Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive. A hardcore RPG skillset, a vast map, massively customisable sandbox and a cute tutorial raccoon await the unwary. So how will you die? All it takes is a bite..",
+        "steamPageLink": "https://store.steampowered.com/app/108600/Project_Zomboid/",
         "saleEndDate": "2023-06-10",
         "dateAdded": "2023-05-27"
       }
