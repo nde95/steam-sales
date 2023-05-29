@@ -1,9 +1,13 @@
 import "./steam-button.styles.css";
 
-const SteamButton = () => {
+const SteamButton = ({ steamPageLink }) => {
+    const redirectToSteamPage = () => {
+        window.open(steamPageLink, "_blank");
+    }
+
     return(
         <div className="steam-btn-container">
-            <button className="steam-btn">
+            <button className="steam-btn" onClick={redirectToSteamPage} >
                 <span className="steam-btn-text">Navigate to Steam Page</span>
                 <span className="steam-btn-icon"></span>
             </button>
