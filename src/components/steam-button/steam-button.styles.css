@@ -1,0 +1,25 @@
+.steam-btn {
+    position: relative;
+    background: linear-gradient(to right, rgb(117, 176, 34), rgb(88, 138, 27));
+    /* Additional button styles */
+  }
+  
+  .steam-btn .steam-btn-text {
+    padding-left: 15px; /* Adjust as needed */
+    /* Additional text styles */
+  }
+  
+  .steam-btn .steam-btn-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-image: url("../../assets/Steam_icon_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
