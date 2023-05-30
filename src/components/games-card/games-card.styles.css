@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
+    user-select: none;
   }
 
   .game-card img {
@@ -41,8 +42,18 @@
     border-radius: 25px;
 }
 
+.genre-badge {
+  font-size: 10px;
+  border-radius: 25px;
+  padding: 3px;
+  color: #E2D7D7;
+  background-color: #887B7B;
+  margin: 3px;
+  user-select: none;
+}
+
 .game p {
-    color: white;
+    color: whitesmoke;
     margin: 2%;
     padding: 1%;
   }

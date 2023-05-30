@@ -19,7 +19,14 @@ const GameCard = () => {
               >
                 <h2>{game.name}</h2>
                 <img src={game.thumbnail} alt={game.name} />
+                <div className='game-genres'>
+                  {/* store genres as separate entries with a map */}
+                  {game.genres.map((genre) => (
+                    <span key={genre} className='genre-badge'>{genre}</span>
+                  ))}
+                </div>
                 <p>{game.description}</p>
+                {/* switch to disabled card on date expiry  */}
                 {new Date(game.saleEndDate) < currentDate ? (
                   <span className='sale-over'>Sale ended</span>
                 ) : (
