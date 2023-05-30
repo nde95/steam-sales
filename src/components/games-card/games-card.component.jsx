@@ -30,7 +30,7 @@ const GameCard = () => {
                 {new Date(game.saleEndDate) < currentDate ? (
                   <span className='sale-over'>Sale ended</span>
                 ) : (
-                  <span>Sale ends on: {game.saleEndDate}</span>
+                  <span className='sale-date'>Sale ends on: {game.saleEndDate}</span>
                 )}
 
 

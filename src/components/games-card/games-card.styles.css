@@ -63,9 +63,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.sale-date {
+  color: black; 
+  font-weight: 400;
+}
+
 .sale-over {
-    color: red;
-    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-weight: 400;
 }
 
 
