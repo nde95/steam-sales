@@ -8,7 +8,7 @@ const ExpiredSteamButton = ({ steamPageLink }) => {
     return(
         <div className="expired-steam-btn-container">
             <button className="expired-steam-btn" onClick={redirectToSteamPage} >
-                <span className="expired-steam-btn-text">View game for sale</span>
+                <span className="expired-steam-btn-text">View Steam Page</span>
                 <span className="expired-steam-btn-icon"></span>
             </button>
         </div>
