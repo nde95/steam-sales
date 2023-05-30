@@ -21,7 +21,7 @@ const GameCard = () => {
                 <img src={game.thumbnail} alt={game.name} />
                 <p>{game.description}</p>
                 {new Date(game.saleEndDate) < currentDate ? (
-                  <span>Sale ended</span>
+                  <span className='sale-over'>Sale ended</span>
                 ) : (
                   <span>Sale ends on: {game.saleEndDate}</span>
                 )}
