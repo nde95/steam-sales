@@ -24,7 +24,7 @@ const GameCard2 = () => {
       <div className='game-card'>
         {games.map((game) => (
           <div
-            key={game.name}
+            key={game.date_added}
             className={`game ${game.is_free ? '' : 'expired'}`}
           >
             <h2>{game.name}</h2>
@@ -39,7 +39,7 @@ const GameCard2 = () => {
             {/* switch to disabled card on date expiry  */}
             {game.is_free ? (
                 <>
-                    <span className='sale-date'>Sale ends on: {game.saleEndDate}</span>
+                    <span className='sale-active'>Sale currently active</span>
                     <SteamButton appId={game.steam_appid} />
                 </>
                 ) : (
