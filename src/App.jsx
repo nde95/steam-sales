@@ -1,12 +1,12 @@
 import './App.css'
-import GameCard from './components/games-card/games-card.component'
+import GameCard2 from './components/game-card-db/game-card-db.component'
 
 function App() {
   
 
   return (
     <>
-    <GameCard />
+    <GameCard2 />
     </>
   )
 }
