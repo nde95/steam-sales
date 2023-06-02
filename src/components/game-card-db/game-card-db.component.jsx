@@ -32,47 +32,55 @@ const GameCard2 = () => {
     setDisplayMode(newDisplayMode);
   };
 
-  const activeData = displayMode === 'games' ? gameData : dlcData;
+  let activeData = displayMode === 'games' ? gameData : dlcData;
+
+  // Sort the activeData array by is_free (true first)
+  activeData.sort((a, b) => (a.is_free === b.is_free ? 0 : a.is_free ? -1 : 1));
 
   return (
     <div>
-    <div className='display-toggle'>
-      <button onClick={handleDisplayModeToggle}>
-        {displayMode === 'games' ? 'Games' : 'DLC'}
-      </button>
-    </div>
-    <div className='game-card-container'>
-      <div className='game-card'>
-        {activeData.map((data) => (
-          <div
-            key={data.date_added}
-            className={`game ${data.is_free ? '' : 'expired'}`}
-          >
-            <h2>{data.name}</h2>
-            <img src={data.header_image} alt={data.name} />
-            <div className='game-genres'>
-              {data.genres.map((genre) => (
-                <span key={genre} className='genre-badge'>{genre}</span>
-              ))}
+      <div className='display-toggle'>
+        <button onClick={handleDisplayModeToggle}>
+          {displayMode === 'games' ? 'Games' : 'DLC'}
+        </button>
+      </div>
+      <div className='game-card-container'>
+        <div className='game-card'>
+          {activeData.map((data, index) => (
+            <div
+              key={`${displayMode}_${index}`}
+              className={`game ${data.is_free ? '' : 'expired'}`}
+            >
+              <h2>{data.name}</h2>
+              <img src={data.header_image} alt={data.name} />
+              <div className='game-genres'>
+                {data.genres.map((genre) => (
+                  <span key={genre} className='genre-badge'>
+                    {genre}
+                  </span>
+                ))}
+              </div>
+              <p>{data.short_description}</p>
+              {data.is_free ? (
+                <>
+                  <span className='sale-active'>Sale currently active</span>
+                  <SteamButton appId={data.steam_appid} />
+                </>
+              ) : (
+                <>
+                  <span className='sale-over'>Sale ended</span>
+                  <SteamButton
+                    appId={data.steam_appid}
+                    isExpired={!data.is_free}
+                  />
+                </>
+              )}
             </div>
-            <p>{data.short_description}</p>
-            {data.is_free ? (
-              <>
-                <span className='sale-active'>Sale currently active</span>
-                <SteamButton appId={data.steam_appid} />
-              </>
-            ) : (
-              <>
-                <span className='sale-over'>Sale ended</span>
-                <SteamButton appId={data.steam_appid} isExpired={!data.is_free} />
-              </>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default GameCard2;
