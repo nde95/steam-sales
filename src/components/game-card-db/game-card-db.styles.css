@@ -1,3 +1,8 @@
+.display-toggle {
+  display: flex;
+  justify-content: center;
+}
+
 .game-card-container {
     display: flex;
     justify-content: center;
