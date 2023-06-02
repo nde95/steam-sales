@@ -3,6 +3,11 @@
   justify-content: center;
 }
 
+.display-toggle button {
+  margin: 5px;
+  background-color: darkgrey;
+}
+
 .game-card-container {
     display: flex;
     justify-content: center;

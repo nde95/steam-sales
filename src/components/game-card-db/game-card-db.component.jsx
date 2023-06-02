@@ -40,8 +40,11 @@ const GameCard2 = () => {
   return (
     <div>
       <div className='display-toggle'>
-        <button onClick={handleDisplayModeToggle}>
-          {displayMode === 'games' ? 'Games' : 'DLC'}
+        <button onClick={() => setDisplayMode('games')} className={displayMode === 'games' ? 'active' : ''}>
+          Games
+        </button>
+        <button onClick={() => setDisplayMode('dlc')} className={displayMode === 'dlc' ? 'active' : ''}>
+          DLC
         </button>
       </div>
       <div className='game-card-container'>
