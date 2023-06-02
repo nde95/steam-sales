@@ -35,4 +35,22 @@ const getGames = async () => {
   }
 };
 
-export { app, getGames };
+// Function to get all DLC
+const getDlc = async () => {
+  try {
+    const dlcCollectionRef = collection(db, 'dlc');
+    const dlcSnapshot = await getDocs(dlcCollectionRef);
+    
+    const dlc = [];
+    dlcSnapshot.forEach((dlcDoc) => {
+      dlc.push({ id: dlcDoc.id, ...dlcDoc.data() });
+    });
+    
+    return dlc;
+  } catch (error) {
+    console.error("Error getting dlc:", error);
+    return null;
+  }
+};
+
+export { app, getGames, getDlc };
