@@ -17,6 +17,25 @@
     user-select: none;
   }
 
+.game p {
+    color: whitesmoke;
+    margin: 2%;
+    padding: 1%;
+    height: 100px; /* Adjust the height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+  }
+
+.game h2 {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+}
+
   .game-card img {
     max-width: 100%;
     height: auto;
@@ -57,16 +76,7 @@
   user-select: none;
 }
 
-.game p {
-    color: whitesmoke;
-    margin: 2%;
-    padding: 1%;
-  }
 
-.game h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .sale-active {
   color: black; 
