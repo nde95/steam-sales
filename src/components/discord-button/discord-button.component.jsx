@@ -1,6 +1,6 @@
 import './discord-button.styles.css'
 
-const DiscordButton = ({ isSSO, url }) => (
+const DiscordButton = ({ discordText }) => (
   <div className="discord-button">
     <div style={{ width: 25, height: 25, marginRight: 15 }}>
       <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240"  style={{ fill: 'white' }}>
@@ -14,7 +14,7 @@ const DiscordButton = ({ isSSO, url }) => (
         />
       </svg>
     </div>
-    <span>{isSSO ? "Sign in with Discord" : "Join the Discord"}</span>
+    <span>{discordText}</span>
   </div>
 );
 
