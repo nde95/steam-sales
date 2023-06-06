@@ -1,0 +1,21 @@
+.docs-container {
+    text-align: center;
+    background-color: beige;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.docs-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.command-container {
+    display: inline-flex;
+}
+
+.command {
+    font-weight: 700;
+    margin-right: 5px;
+}
