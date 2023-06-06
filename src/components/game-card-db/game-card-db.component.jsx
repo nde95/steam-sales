@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import SteamButton from '../steam-button/steam-button.component';
 import './game-card-db.styles.css';
 import { getGames, getDlc } from '../../utils/firebase.utils';
+import DiscordButton from '../discord-button/discord-button.component';
+import { Link } from 'react-router-dom';
 
 const GameCard2 = () => {
   const currentDate = new Date();
@@ -39,6 +41,11 @@ const GameCard2 = () => {
 
   return (
     <div>
+      <div className="discord-wrapper">
+        <Link to="/discord">
+          <DiscordButton discordText={"Use our Discord bot"} />
+        </Link>
+      </div>
       <div className='display-toggle'>
         <button onClick={() => setDisplayMode('games')} className={displayMode === 'games' ? 'active' : ''}>
           Games
