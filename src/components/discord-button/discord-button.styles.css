@@ -1,0 +1,10 @@
+.discord-button {
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-flex;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #7289da;
+    text-decoration: none;
+}
