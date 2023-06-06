@@ -1,5 +1,6 @@
 import DiscordButton from "../discord-button/discord-button.component"
 import './discord-docs.styles.css'
+import { Link } from "react-router-dom"
 
 const DiscordDocs = () => {
     return (
@@ -23,7 +24,9 @@ const DiscordDocs = () => {
                     <p>This list is subject to change and grow, we're always looking to improve it so make sure to keep an eye on !helpme</p>
                 </div>
                 <div className="button-wrapper">
-                  <DiscordButton discordText={"Try it out!"} />
+                    <Link to="https://discord.com/api/oauth2/authorize?client_id=1115647086663315668&permissions=75840&scope=bot">
+                        <DiscordButton discordText={"Try it out!"} />
+                    </Link>
                 </div>
             </div>
         </>
