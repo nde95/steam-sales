@@ -21,7 +21,8 @@ const DiscordDocs = () => {
                     <span className="command-container"><p className="command">!games </p><p>Provides a list of all free to keep games at the time of request with a link right to the Steam page</p></span> <br />
                     <span className="command-container"><p className="command">!dlc </p><p>Provides a list of all free to keep dlc, similar to !games</p></span> <br />
                     <span className="command-container"><p className="command">!watchgames </p><p>Creates a table of games that will check for new information every day at 17:02 and update any new or outdated sales</p></span> <br />
-                    <span className="command-info">(Will need to be run again if the bot goes down or needs an update!)</span> <p>Best used in a dedicated channel for itself to keep information visible.</p> <br />
+                    <span className="command-info">(Will need to be run again if the bot goes down or needs an update!)</span> <p>Best used in a dedicated channel for itself to keep information visible. Can only be active in a single channel.</p> <br />
+                    <span className="command-container"><p className="command">!stopwatchgames </p><p>Cancels the active instance of !watchgames to allow invoking it again. </p></span> <br />
                     <span className="command-container"><p className="command">!helpme </p><p>Displays all current commands inside Discord</p></span> <br />
                     <p>This list is subject to change and grow, we're always looking to improve it so make sure to keep an eye on !helpme</p>
                 </div>
