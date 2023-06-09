@@ -18,4 +18,4 @@ React application that displays all current 100% off free to keep Steam games. U
 - Firestore
 - Steam Web API
 - IsThereAnyDeal API
-- Discord button from ![Alex Crocker](https://codepen.io/croc/details/NWqzGYd)
+- Discord button from [Alex Crocker](https://codepen.io/croc/details/NWqzGYd)
