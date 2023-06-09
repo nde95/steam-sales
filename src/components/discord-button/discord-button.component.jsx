@@ -1,5 +1,6 @@
 import './discord-button.styles.css'
 
+// from https://codepen.io/croc/details/NWqzGYd
 const DiscordButton = ({ discordText }) => (
   <div className="discord-button">
     <div style={{ width: 25, height: 25, marginRight: 15 }}>
